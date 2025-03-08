@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Processor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Processor</h1>
+        <div class="image-container">
+            <img id="capturedImage" src="" alt="Captured Image">
+        </div>
+        <p id="description">Click the button to capture an image and analyze it.</p>
+        <button id="captureBtn">📷 Capture Image</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
